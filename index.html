@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrakac</title>
+
+    <!-- IMG in TITLE -->
+    <link rel="icon" href="img/Vrakac_LOGO.png" type="image/icon type">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <!-- Loading screen -->
+
+    <div class="loading_screen">
+        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7999 13.2998C18.6599 13.2998 20.1699 14.8098 20.1699 16.6698C20.1699 18.5298 18.6599 20.0398 16.7999 20.0398C14.9399 20.0398 13.4299 18.5298 13.4299 16.6698C13.4299 14.8098 14.9399 13.2998 16.7999 13.2998Z" fill="#FEFEFE"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4199 17.4299L14.5499 24.8299C13.9299 25.0699 13.6899 25.2399 13.9799 25.9799L16.6899 32.8999C16.9299 33.5099 17.1499 34.1799 17.8399 33.4699L33.4099 17.4399L33.4199 17.4299Z" fill="rgb(219, 223, 0)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0601 0.5L24.9401 18.68C25.2001 19.29 25.3601 19.49 26.1001 19.21L32.9401 16.65C33.4001 16.48 34.3101 16.26 33.4701 15.49L17.0601 0.5Z" fill="#FEFEFE"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.290039 17.4799L18.6 8.55988C19.2 8.26988 19.36 8.08988 19.05 7.36988L16.27 0.879883C16.08 0.419883 15.82 -0.420117 15.08 0.429883L0.290039 17.4799Z" fill="rgb(219, 223, 0)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 33.9399L8.88 15.3999C8.63 14.7799 8.39 14.6199 7.67 14.9599L0.999997 18.0899C0.549997 18.2999 -0.270003 18.5199 0.559997 19.2999L16.2 33.9399Z" fill="#FEFEFE"/>
+        </svg>
+    </div>
+
+    <!-- Otvaracie hodiny -->
+    <div class="open_clock">
+        <p><i>Pracovná doba :</i> Pondelok-Piatok 07:00 - 15:30</p>
+        <p><i>Tel. číslo :</i> +421 901 921 609</p>
+    </div>
+
+
+    <!-- NAV -->
+
+    <nav id="nav">
+        <div class="logo">
+            <a href="">
+                <svg width="20" height="20" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7999 13.2998C18.6599 13.2998 20.1699 14.8098 20.1699 16.6698C20.1699 18.5298 18.6599 20.0398 16.7999 20.0398C14.9399 20.0398 13.4299 18.5298 13.4299 16.6698C13.4299 14.8098 14.9399 13.2998 16.7999 13.2998Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4199 17.4299L14.5499 24.8299C13.9299 25.0699 13.6899 25.2399 13.9799 25.9799L16.6899 32.8999C16.9299 33.5099 17.1499 34.1799 17.8399 33.4699L33.4099 17.4399L33.4199 17.4299Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0601 0.5L24.9401 18.68C25.2001 19.29 25.3601 19.49 26.1001 19.21L32.9401 16.65C33.4001 16.48 34.3101 16.26 33.4701 15.49L17.0601 0.5Z" fill="rgb(219, 223, 0)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.290039 17.4799L18.6 8.55988C19.2 8.26988 19.36 8.08988 19.05 7.36988L16.27 0.879883C16.08 0.419883 15.82 -0.420117 15.08 0.429883L0.290039 17.4799Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 33.9399L8.88 15.3999C8.63 14.7799 8.39 14.6199 7.67 14.9599L0.999997 18.0899C0.549997 18.2999 -0.270003 18.5199 0.559997 19.2999L16.2 33.9399Z" fill="rgb(219, 223, 0)"/>
+                </svg> VRAKAC.sk
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="#vv">Vyradenie vozidla</a></li>
+            <li><a href="#article">Odťahová služba</a></li>
+            <li><a href="#aside">Autá na náhradné diely</a></li>
+            <li><a href="#xx">Povolenia</a></li>
+            <li><a href="#xx">Na stiahnutie</a></li>
+            <li><a href="#section">Kontakty</a></li>
+        </ul>
+    </nav>
+
+    <!-- NAV RESPONSIVE -->
+
+    <div class="nav_dark"></div>
+
+    <div id="nav_resp">
+        <div class="logo">
+            <a href="">
+                <svg width="20" height="20" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7999 13.2998C18.6599 13.2998 20.1699 14.8098 20.1699 16.6698C20.1699 18.5298 18.6599 20.0398 16.7999 20.0398C14.9399 20.0398 13.4299 18.5298 13.4299 16.6698C13.4299 14.8098 14.9399 13.2998 16.7999 13.2998Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4199 17.4299L14.5499 24.8299C13.9299 25.0699 13.6899 25.2399 13.9799 25.9799L16.6899 32.8999C16.9299 33.5099 17.1499 34.1799 17.8399 33.4699L33.4099 17.4399L33.4199 17.4299Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0601 0.5L24.9401 18.68C25.2001 19.29 25.3601 19.49 26.1001 19.21L32.9401 16.65C33.4001 16.48 34.3101 16.26 33.4701 15.49L17.0601 0.5Z" fill="rgb(219, 223, 0)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.290039 17.4799L18.6 8.55988C19.2 8.26988 19.36 8.08988 19.05 7.36988L16.27 0.879883C16.08 0.419883 15.82 -0.420117 15.08 0.429883L0.290039 17.4799Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 33.9399L8.88 15.3999C8.63 14.7799 8.39 14.6199 7.67 14.9599L0.999997 18.0899C0.549997 18.2999 -0.270003 18.5199 0.559997 19.2999L16.2 33.9399Z" fill="rgb(219, 223, 0)"/>
+                </svg> VRAKAC.sk
+            </a>
+        </div>
+
+        <svg id="Hamburger" width="25" height="25" viewBox="0 0 1656 1048" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H1656V214H0V0Z" fill="rgb(219, 223, 0)"/>
+            <path d="M0 834H1656V1048H0V834Z" fill="rgb(219, 223, 0)"/>
+            <path d="M0 417H1656V631H0V417Z" fill="rgb(219, 223, 0)"/>
+        </svg>
+    </div>
+
+    <div class="nav_resp_ul">
+        <ul>
+            <li><a href="#vv">Vyradenie vozidla</a></li>
+            <li><a href="#article">Odťahová služba</a></li>
+            <li><a href="#aside">Autá na náhradné diely</a></li>
+            <li><a href="#povolenia">Povolenia</a></li>
+            <li><a href="#stiahnutie">Na stiahnutie</a></li>
+            <li><a href="#section">Kontakty</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+
+    <header id="header">
+        <div class="dark"></div>
+
+        <!-- Image by Emslichter from Pixabay -->
+
+        <div id="text">
+            <h1>
+                <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7999 13.2998C18.6599 13.2998 20.1699 14.8098 20.1699 16.6698C20.1699 18.5298 18.6599 20.0398 16.7999 20.0398C14.9399 20.0398 13.4299 18.5298 13.4299 16.6698C13.4299 14.8098 14.9399 13.2998 16.7999 13.2998Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4199 17.4299L14.5499 24.8299C13.9299 25.0699 13.6899 25.2399 13.9799 25.9799L16.6899 32.8999C16.9299 33.5099 17.1499 34.1799 17.8399 33.4699L33.4099 17.4399L33.4199 17.4299Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0601 0.5L24.9401 18.68C25.2001 19.29 25.3601 19.49 26.1001 19.21L32.9401 16.65C33.4001 16.48 34.3101 16.26 33.4701 15.49L17.0601 0.5Z" fill=" rgb(219, 223, 0)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.290039 17.4799L18.6 8.55988C19.2 8.26988 19.36 8.08988 19.05 7.36988L16.27 0.879883C16.08 0.419883 15.82 -0.420117 15.08 0.429883L0.290039 17.4799Z" fill="#FEFEFE"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2 33.9399L8.88 15.3999C8.63 14.7799 8.39 14.6199 7.67 14.9599L0.999997 18.0899C0.549997 18.2999 -0.270003 18.5199 0.559997 19.2999L16.2 33.9399Z" fill=" rgb(219, 223, 0)"/>
+                </svg> VRAKAC.sk
+            </h1>
+            <p>AUTORIZOVANÝ SPRACOVATEĽ STARÝCH VOZIDIEL</p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+        <div class="right">
+            <h1><span>O</span> <span>NÁS</span></h1>
+            <p>História firmy siaha do roku 1994, kedy sme začali svoju činnosť v oblasti výkupu, spracovania a triedenia druhotných surovín v regióne Stará Ľubovňa. Po dlhoročných skúsenostiach v danom odvetví sme rozšírili našu činnosť o ekologické spracovanie
+                starých vozidiel. V októbri 2013 nám bola udelená autorizácia na spracovanie starých vozidiel. Za týmto účelom sme zriadili novú prevádzku na Továrenskej ulici č.51 v Starej Ľubovni. Pri spracovaní starých vozidiel kladieme maximálny dôraz
+                na minimalizovanie vplyvov na životné prostredie, ktoré so sebou táto činnosť prináša.</p>
+        </div>
+
+        <div class="left">
+            <h1><span>SOCIÁLNE</span> <span>SIETE</span></h1>
+
+            <div class="left_links">
+                <a href="https://www.facebook.com/vrakoviskostaralubovna/" target="_blank">FACEBOOK</a>
+                <a href="">INSTAGRAM</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Vyradene vozidla -->
+
+    <div id="vv" class="vv">
+        <h1><span>VYRADENIE</span> <span>VOZIDLA</span></h1>
+
+        <p>Službu odhlásenia vozidla z evidencie a následné vystavenie dokladov o odovzdaní vozidla autorizovanému spracovateľovi poskytujeme <i>bezplatne</i>.</p>
+        <h5>K ODHLÁSENIU MOTOROVÉHO VOZIDLA JE POTREBNÉ :</h5>
+
+        <div class="card_box">
+            <div class="card">
+
+                <h6>SÚKROMNÁ OSOBA</h6>
+
+                <p>
+                    <i>a.)</i>
+                    <br>Staré vozidlo (musí mať 90% hmotnosti podľa tech. preukazu, musí obsahovať hlavné súčasti a to: 1. motor 2, prevodovku 3,nápravy 4, karosériu 5. akumulátor 6. katalyzátor ak bol súčasťou vozidla pri jeho uvedení na trh. Taktiež
+                    musí byť čitateľné VIN číslo vozidla na pevnej časti karosérie NIE NA ŠTÍTKU)
+                </p>
+                <p>
+                    <i>b.)</i>
+                    <br>Majiteľ vozidla alebo splnomocnená osoba s platným dokladom totožnosti a overeným podpisom (v prípade ak je majiteľom vozidla nežijúca osoba je potrebné osvedčenie o dedičstve, v ktorom je určená osoba, ktorá vozidlo zdedila.)
+                </p>
+                <p>
+                    <i>c.)</i>
+                    <br>Doklady od vozidla (veľký, malý technický preukaz), evidenčné čísla (ak sa jedná o vozidlo, ktoré už bolo vyradené z evidencie alebo dočasne odhlásené je potrebné potvrdenie z PZ.)
+                </p>
+            </div>
+
+            <div class="card">
+
+                <h6>FIRMA</h6>
+
+                <p>
+                    <i>a.)</i>
+                    <br>Staré vozidlo (musí mať 90% hmotnosti podľa tech. preukazu, musí obsahovať hlavné súčasti a to: 1. motor 2, prevodovku 3,nápravy 4, karosériu 5. akumulátor 6. katalyzátor ak bol súčasťou vozidla pri jeho uvedení na trh. Taktiež
+                    musí byť čitateľné VIN číslo vozidla na pevnej časti karosérie NIE NA ŠTÍTKU)
+                </p>
+                <p>
+                    <i>b.)</i>
+                    <br>Výpis z obchodného registra
+                </p>
+                <p>
+                    <i>c.)</i>
+                    <br>Štatutárny zástupca firmy alebo splnomocnená osoba s overeným podpisom a platným dokladom totožnosti.
+                </p>
+                <p>
+                    <i>d.)</i>
+                    <br>Doklady od vozidla (veľký, malý technický preukaz), evidenčné čísla (ak sa jedná o vozidlo, ktoré už bolo vyradené z evidencie alebo dočasne odhlásené je potrebné potvrdenie z PZ.)
+                </p>
+            </div>
+
+            <div class="card">
+
+                <h6>V PRÍPADE</h6>
+
+                <p>
+                    V prípade, že vozidlo neobsahuje základné súčasti stanovené zákonom (<a href="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2015/79/20160101#paragraf-60.odsek-7"> §60 ods. 7 zákona o odpadoch č. 79/2015 Z.z </a>) t.j. 1. motor 2. prevodovka
+                    3. náprava 4.karoséria 5. akumulátor 6. katalyzátor (ak bol súčasťou vozidla pri jeho uvedení na trh) sme oprávnený účtovať si poplatok za nekompletné vozidlo. Výška poplatku je 80€
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARTICLE -->
+
+    <article id="article">
+        <h1><span>ODŤAHOVÁ</span> <span>SLUŽBA</span></h1>
+
+        <p>Cena za odvoz vozidla určeného na ekologické spracovanie je <i>0,90€/km</i>.</p>
+        <p>Minimálna cena odťahu je <i>15€</i>.</p>
+        <p>Odťah vozidla určeného na ekologické spracovanie môžete nahlásiť na tel: <i>054/432 63 65</i> alebo na <i>0901 921 609</i>.</p>
+    </article>
+
+    <!-- ASIDE -->
+
+    <aside id="aside">
+        <h1><span>AUTÁ</span> <span>NA NÁHRADNÉ DIELY</span></h1>
+
+        <p>Ponúkame Vám široký sortiment použitých náhradných dielov, na rôzne značky automobilov.</p>
+        <p>Ceny náhradných dielov sa určujú individuálne.</p>
+        <p>Bližšie info na tel: <i>+421 901 921 609</i></p>
+    </aside>
+
+    <!-- NEVIEM -->
+
+    <div id="xx" class="xx">
+        <div id="povolenia">
+            <h1><span>PO</span><span>VOLENIA</span></h1>
+
+            <h6>Rozhodnutie na prevádzkovanie zariadenia na zber odpadu ( staré vozidlá) :</h6>
+            <p>č. OU-SL-OSZP-2016/003237-010Pv</p>
+
+            <h6>Rozhodnutie na prevádzkovanie zariadenia na zhodnocovanie odpadov :</h6>
+            <p>č. OU-SL-OSZP-2016/006274-006Pv</p>
+
+            <h6>Rozhodnutie súhlas na prepravu nebezpečných odpadov :</h6>
+            <p>č. OU-PO-OSZP2-2016-018448-06-LT</p>
+
+            <h6>Rozhodnutie na vydanie Prevádzkového poriadku zariadenia na zhodnocovanie odpadov :</h6>
+            <p>č. OU-SL-OSZP-2016/006275-004Pv</p>
+        </div>
+
+        <div id="stiahnutie">
+            <h1><span>NA</span> <span>STIAHNUTIE</span></h1>
+
+            <ul>
+                <li>
+                    <a href="Download_files/splnomocnenie_na_vyradenie_vozidla"><i>1.</i> Splnomocnenie na vyradenie vozidla z evidencie</a>
+                </li>
+                <li>
+                    <a href="Download_files/12-010_Ziadost_o_prihlasenie_do_evidencie.pdf" target="_blank"><i>2.</i> Žiadosť o prihlásenie vozidla do evidenie</a>
+                </li>
+                <li>
+                    <a href="Download_files/2014_mala_ziadost_II.pdf" target="_blank"><i>3.</i> Žiadosť o vykonanie zmeny v evidencii vozidiel</a>
+                </li>
+                <li>
+                    <a href="Download_files/12-011-1_Ziadost_o_priamy_prevod_drzby_v_aktualnom_okrese.pdf" target="_blank"><i>4.</i> Žiadosť o priamy prevod držby vozidla v aktuálnom okrese</a>
+                </li>
+                <li>
+                    <a href="Download_files/12-007_Cestne_vyhlasenie.pdf" target="_blank"><i>5.</i> Čestné vyhlásenie o strate, odcudzení, poškodení dokladov a tabuliek s EČ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECTION -->
+
+    <section id="section">
+        <div class="contact">
+            <h5><span>PREVÁDZKA</span> <span>SPRACOVANIA STARÝCH VOZIDIEL</span></h5>
+
+            <ul>
+                <li>Ján Džunda-UNO</li>
+                <li>Továrenská 51</li>
+                <li>064 01 Stará Ľubovňa</li>
+            </ul>
+
+            <h5><span>TELEFONICKÝ</span> <span>KONTAKT</span></h5>
+
+            <ul>
+                <!-- <li><a href="https://www.facebook.com/vrakoviskostaralubovna/" target="_blank">FACEBOOK</a></li> -->
+                <li><i>VRAKOVISKO:<br></i>+421 901 921 609</li>
+                <li><i>ODŤAHOVÁ SLUŽBA:<br></i>052/432 63 65</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h5><span>FAKTRURAČNÉ</span> <span>ÚDAJE</span></h5>
+
+            <ul>
+                <li>Ján Džunda-UNO</li>
+                <li>Gerlachov 68</li>
+                <li>086 04 Kružlov</li>
+                <li><i>IČO:</i><br>336 883 97</li>
+                <li><i>IČ DPH:</i><br>SK1020705026</li>
+                <li><i>Bankové spojenie:</i><br>SK54 0200 0000 0013 5664 1751</li>
+                <li><i>Zapísaný v živnostenskom registri :</i><br>Číslo živnostenského registra: 701-3069</li>
+            </ul>
+        </div>
+
+        <!-- GOOGLE MAP -->
+        <div class="google_map">
+            <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDj4LrSDx-3UpQBSXlq8wKmRqr5hj2BxB4&center=49.30759412395534,20.6809701040204&zoom=18
+            &q=VRAKAC.sk"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <i>Ján Džunda-UNO © 2021</i>
+    </footer>
+    <div class="autor">
+        <p>Vytvoril <a href="http://marchevskysimon.6f.sk/" target="_blank">Šimon Marhevský</a></p>
+    </div>
+
+    <!-- JS SCRIPT -->
+
+    <script>
+        'use strict';
+
+
+        /*
+         * NAV Animetion from TOP
+         */
+
+        let nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 600) {
+                nav.style.backgroundColor = 'rgb(35, 35, 35)';
+                nav.style.boxShadow = '2px 2px 2px 5px rgba(15, 15, 15, .5)';
+            } else {
+                nav.style.background = 'none';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+
+        /*
+         * Parallax
+         */
+
+        let parallax = document.getElementById('text'),
+            header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            // console.log('ahoj');
+            parallax.style.top = (value * 0.3) + "px";
+
+            header.style.top = (value * 0.5) + "px";
+        });
+
+
+        /*
+         * LOADING SCREEN
+         */
+
+        let loadingScreen = document.querySelector('.loading_screen');
+
+        window.addEventListener('load', function() {
+            loadingScreen.parentElement.removeChild(loadingScreen);
+        });
+
+
+        /*
+         * HAMBURGER menu slide
+         */
+
+        let hamburger = document.getElementById('Hamburger'),
+            navUl = document.querySelector('.nav_resp_ul'),
+            navDark = document.querySelector('.nav_dark');
+
+        let bool = Boolean(true);
+
+        hamburger.addEventListener('click', function() {
+            if (bool === true) {
+                navUl.style.left = "0px";
+                navDark.style.display = 'block';
+
+                bool = Boolean(false);
+            } else {
+                navUl.style.left = "-270px";
+                navDark.style.display = 'none';
+
+                bool = Boolean(true);
+            }
+        });
+
+        /* Vsunie sa po kliknuti na link */
+
+        var x = navUl.querySelectorAll('a'),
+            i;
+
+        for (i = 0; i < x.length; i++) {
+            x[i].addEventListener('click', event => {
+                navUl.style.left = '-270px';
+                navDark.style.display = 'none';
+
+                bool = Boolean(true);
+            });
+        }
+
+
+        /* ESC event  */
+
+        document.addEventListener('keyup', (e) => {
+            if (e.keyCode === 27) {
+                navUl.style.left = '-270px';
+                navDark.style.display = 'none';
+
+                bool = Boolean(true);
+            }
+        });
+    </script>
+</body>
+
+</html>
