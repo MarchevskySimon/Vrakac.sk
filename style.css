@@ -104,7 +104,8 @@ nav a:hover {
 }
 
 .nav_dark {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .nav_resp_ul {
@@ -152,6 +153,7 @@ nav a:hover {
         height: 100%;
         background-color: rgba(0, 0, 0, .7);
         z-index: 9;
+        transition: .3s;
     }
     #Hamburger {
         /* min-width: 100%; */
@@ -167,7 +169,7 @@ nav a:hover {
         display: block;
         z-index: 9;
         background-color: rgb(20, 20, 20);
-        transition: .2s;
+        transition: .3s;
     }
     .nav_resp_ul ul {
         position: relative;
@@ -260,7 +262,7 @@ main::before {
 main {
     position: relative;
     width: 100%;
-    height: 95%;
+    /* height: 95%; */
     background-color: rgb(35, 35, 35);
     z-index: 5;
     display: flex;
@@ -278,6 +280,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10% 0 0;
 }
 
 .left h1 {
@@ -314,6 +317,7 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 10% 0 0;
 }
 
 .right h1 {
@@ -375,7 +379,7 @@ main span:first-child {
     align-content: center;
     text-align: center;
     background-color: rgb(35, 35, 35);
-    padding: 2% 0 2% 0;
+    padding: 10% 0 2% 0;
     color: rgb(35, 35, 35);
 }
 
@@ -432,6 +436,11 @@ main span:first-child {
 
 .card i {
     color: whitesmoke;
+}
+
+.card i:last-child {
+    font-weight: 900;
+    color: rgb(35, 35, 35);
 }
 
 
@@ -652,11 +661,11 @@ aside span:first-child {
         text-align: center;
     }
     #povolenia {
-        padding: 0 3%;
+        padding: 5% 3% 0;
     }
     #stiahnutie {
         text-align: center;
-        padding: 0 3%;
+        padding: 5% 3% 0;
     }
     #stiahnutie h1 {
         margin-top: 8%;

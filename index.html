@@ -193,11 +193,11 @@
 
             <div class="card">
 
-                <h6>V PRÍPADE</h6>
+                <h6>NEKOMPLETNÉ VOZIDLO</h6>
 
                 <p>
                     V prípade, že vozidlo neobsahuje základné súčasti stanovené zákonom (<a href="https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2015/79/20160101#paragraf-60.odsek-7"> §60 ods. 7 zákona o odpadoch č. 79/2015 Z.z </a>) t.j. 1. motor 2. prevodovka
-                    3. náprava 4.karoséria 5. akumulátor 6. katalyzátor (ak bol súčasťou vozidla pri jeho uvedení na trh) sme oprávnený účtovať si poplatok za nekompletné vozidlo. Výška poplatku je 80€
+                    3. náprava 4.karoséria 5. akumulátor 6. katalyzátor (ak bol súčasťou vozidla pri jeho uvedení na trh) sme oprávnený účtovať si poplatok za nekompletné vozidlo.<i> Výška poplatku je 80€</i>.
                 </p>
             </div>
         </div>
@@ -380,12 +380,14 @@
         hamburger.addEventListener('click', function() {
             if (bool === true) {
                 navUl.style.left = "0px";
-                navDark.style.display = 'block';
+                navDark.style.opacity = '1';
+                navDark.style.pointerEvents = 'auto';
 
                 bool = Boolean(false);
             } else {
                 navUl.style.left = "-270px";
-                navDark.style.display = 'none';
+                navDark.style.opacity = '0';
+                navDark.style.pointerEvents = 'none';
 
                 bool = Boolean(true);
             }
@@ -399,7 +401,8 @@
         for (i = 0; i < x.length; i++) {
             x[i].addEventListener('click', event => {
                 navUl.style.left = '-270px';
-                navDark.style.display = 'none';
+                navDark.style.opacity = '0';
+                navDark.style.pointerEvents = 'none';
 
                 bool = Boolean(true);
             });
@@ -411,7 +414,8 @@
         document.addEventListener('keyup', (e) => {
             if (e.keyCode === 27) {
                 navUl.style.left = '-270px';
-                navDark.style.display = 'none';
+                navDark.style.opacity = '0';
+                navDark.style.pointerEvents = 'none';
 
                 bool = Boolean(true);
             }
