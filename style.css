@@ -361,18 +361,17 @@ main {
 }
 
 .facebook_instagram a {
-    border: 2px solid whitesmoke;
-    padding: 2%;
+    margin: 0 3%;
+}
+
+.facebook_instagram i {
     -webkit-transition: .1s;
     -o-transition: .1s;
     transition: .1s;
-    margin: 0 1%;
 }
 
-.facebook_instagram a:hover {
-    background-color: rgb(219, 223, 0);
-    border: 2px solid rgb(219, 223, 0);
-    color: rgb(35, 35, 35);
+.facebook_instagram a:hover i {
+    color: rgb(219, 223, 0);
 }
 
 
