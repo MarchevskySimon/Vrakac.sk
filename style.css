@@ -1,15 +1,16 @@
+/* 
+ * Základné nastavenia
+ */
+
 * {
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     list-style: none;
     color: whitesmoke;
 }
-
-
-/* rgba(166,169,0,1) / rgb(255, 81, 50) */
 
 html,
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 
-/* OTVARACIE HODINY */
+/* OTVARACIE HODINY  & TEL. Č. */
 
 .open_clock {
     position: fixed;
@@ -33,7 +34,6 @@ body {
 
 .open_clock p {
     color: rgb(35, 35, 35);
-    /* margin-right: 5%; */
 }
 
 .open_clock i {
@@ -60,42 +60,34 @@ nav {
     transition: .2s;
 }
 
-.logo {
+.nav_logo {
     font-size: 150%;
     flex-grow: 1;
     margin-left: 3%;
 }
 
-.logo a {
+.nav_logo a {
     font-weight: 900;
     color: rgb(219, 223, 0);
-    margin-right: 3%;
 }
 
-.logo i {
-    font-size: 80%;
-    font-style: normal;
-}
-
-nav a:hover svg {
-    transition: 1s;
+.nav_logo a:hover svg {
+    transition: .7s;
     transform: rotate(360deg);
 }
 
 nav ul {
-    font-size: 100%;
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
 }
 
-nav a {
+nav ul a {
     transition: .1s;
     cursor: pointer;
 }
 
-nav a:hover {
-    /* transform: scale(1.1); */
+nav ul a:hover {
     color: rgb(219, 223, 0);
 }
 
@@ -112,14 +104,12 @@ nav a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
-    .open_clock {
-        font-size: 60%;
-        align-items: center;
-    }
-}
 
-@media only screen and (max-width: 460px) {
+/*
+ * MEDIA Q. - NAV - 650px
+ */
+
+@media only screen and (max-width: 650px) {
     .open_clock {
         font-size: 60%;
         align-items: center;
@@ -128,7 +118,7 @@ nav a:hover {
 
 
 /*
- * MEDIA Q. - 980px
+ * MEDIA Q.- NAV - 980px
  */
 
 @media only screen and (max-width: 980px) {
@@ -156,7 +146,6 @@ nav a:hover {
         transition: .3s;
     }
     #Hamburger {
-        /* min-width: 100%; */
         margin: 0 2%;
         cursor: pointer;
     }
@@ -190,9 +179,7 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('img/junkyard.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('img/junkyard.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -215,8 +202,6 @@ header svg {
 
 #text {
     position: relative;
-    margin-left: 1%;
-    /* background-color: rgba(166,169,0,1); */
 }
 
 #text h1 {
@@ -225,14 +210,13 @@ header svg {
 }
 
 #text p {
-    /* font-weight: 100; */
     font-size: 150%;
     color: rgb(219, 223, 0);
 }
 
 
 /*
- * MEDIA Q. - 460px
+ * MEDIA Q. - HEADER - 460px
  */
 
 @media only screen and (max-width: 460px) {
@@ -262,73 +246,66 @@ main::before {
 main {
     position: relative;
     width: 100%;
-    /* height: 95%; */
     background-color: rgb(35, 35, 35);
-    z-index: 5;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 
-/* Left*/
+/* About us */
 
-.left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0 0;
-}
-
-.left h1 {
-    font-size: 200%;
-    margin-bottom: 5%;
-}
-
-.left_links {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.left a {
-    border: 2px solid whitesmoke;
-    padding: 2%;
-    transition: .1s;
-    margin: 0 1% 0 1%;
-}
-
-.left a:hover {
-    background-color: rgb(219, 223, 0);
-    border: 2px solid rgb(219, 223, 0);
-    color: rgb(35, 35, 35);
-}
-
-
-/* Right */
-
-.right {
+.about_us {
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 10% 0 0;
 }
 
-.right h1 {
+.about_us h1 {
     font-size: 200%;
     margin-bottom: 2%;
-    /* color: rgba(166,169,0,1); */
 }
 
-.right p {
+.about_us p {
     font-size: 110%;
     line-height: 250%;
+}
+
+
+/* Facebook & Instagram */
+
+.facebook_instagram {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0 0;
+}
+
+.facebook_instagram h1 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+.facebook_instagram_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.facebook_instagram a {
+    border: 2px solid whitesmoke;
+    padding: 2%;
+    transition: .1s;
+    margin: 0 1%;
+}
+
+.facebook_instagram a:hover {
+    background-color: rgb(219, 223, 0);
+    border: 2px solid rgb(219, 223, 0);
+    color: rgb(35, 35, 35);
 }
 
 
@@ -346,20 +323,19 @@ main span:first-child {
 
 
 /*
- * MEDIA Q. - 980px
+ * MEDIA Q.- MAIN - 980px
  */
 
 @media only screen and (max-width: 980px) {
     main {
-        height: auto;
         padding: 12% 0;
     }
-    /* Right */
-    .right {
+    /* About us */
+    .about_us {
         text-align: left;
     }
-    /* Left */
-    .left {
+    /* Facebook & Instagram */
+    .facebook_instagram {
         width: 80%;
         margin-top: 10%;
     }
@@ -367,38 +343,36 @@ main span:first-child {
 
 
 /*
- * V V
+ * Vyradenie vozidla
  */
 
-.vv {
+.vyradenie_vozidla {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     text-align: center;
     background-color: rgb(35, 35, 35);
     padding: 10% 0 2% 0;
-    color: rgb(35, 35, 35);
 }
 
-.vv h1 {
+.vyradenie_vozidla h1 {
     font-size: 200%;
     margin-bottom: 2%;
 }
 
-.vv p {
+.vyradenie_vozidla p {
     font-size: 110%;
     line-height: 250%;
 }
 
-.vv h5 {
+.vyradenie_vozidla h5 {
     font-size: 110%;
     color: rgb(219, 223, 0);
 }
 
-.vv i {
+.vyradenie_vozidla i {
     font-style: normal;
     color: rgb(219, 223, 0);
 }
@@ -446,23 +420,23 @@ main span:first-child {
 
 /* SPAN */
 
-.vv span {
+.vyradenie_vozidla span {
     border-top: 2px solid whitesmoke;
     padding-top: 1%;
 }
 
-.vv span:first-child {
+.vyradenie_vozidla span:first-child {
     color: rgb(219, 223, 0);
     border-top: 2px solid rgb(219, 223, 0)
 }
 
 
 /*
- * MEDIA Q. - 980px
+ * MEDIA Q.- Vyradenie vozidla - 980px
  */
 
 @media only screen and (max-width: 980px) {
-    .vv h5 {
+    .vyradenie_vozidla h5 {
         margin-top: 5%;
     }
     .card_box {
@@ -477,7 +451,7 @@ main span:first-child {
     .card:hover {
         transform: none;
         background-color: none;
-        box-shadow: none;
+        box-shadow: 8px 8px 4px rgba(15, 15, 15, 1);
     }
 }
 
@@ -491,12 +465,10 @@ article {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     text-align: center;
     background-color: rgb(35, 35, 35);
     padding: 10% 0 2% 0;
-    color: rgb(35, 35, 35);
 }
 
 article h1 {
@@ -529,104 +501,44 @@ article span:first-child {
 
 
 /*
- * ASIDE
+ * Povolenia & Stiahnutie
  */
 
-aside {
+.povolenia_stiahnutie {
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: rgb(35, 35, 35);
-    padding: 10% 0 2% 0;
-    color: rgb(35, 35, 35);
-}
-
-aside h1 {
-    font-size: 200%;
-    margin-bottom: 2%;
-}
-
-aside p {
-    font-size: 110%;
-    line-height: 250%;
-}
-
-aside i {
-    font-style: normal;
-    color: rgb(219, 223, 0);
-}
-
-
-/* SPAN */
-
-aside span {
-    border-top: 2px solid whitesmoke;
-    padding-top: 1%;
-}
-
-aside span:first-child {
-    color: rgb(219, 223, 0);
-    border-top: 2px solid rgb(219, 223, 0)
-}
-
-
-/*
- * MEDIA Q. - 980px
- */
-
-@media only screen and (max-width: 980px) {
-    aside h1 {
-        line-height: 170%;
-    }
-}
-
-
-/*
- * XX
- */
-
-.xx {
-    position: relative;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-content: center;
     text-align: center;
     background-color: rgb(35, 35, 35);
     padding: 10% 0 5% 0;
-    color: rgb(35, 35, 35);
 }
 
-.xx h1 {
+.povolenia_stiahnutie h1 {
     font-size: 200%;
     margin-bottom: 5%;
-    /* text-align: center; */
 }
 
-.xx h6 {
+.povolenia_stiahnutie h6 {
     color: rgb(219, 223, 0);
     margin-bottom: 2%;
 }
 
-.xx p {
+.povolenia_stiahnutie p {
     margin-bottom: 5%;
 }
 
-.xx li {
+.povolenia_stiahnutie li {
     margin-bottom: 8%;
 }
 
-.xx a:hover {
+.povolenia_stiahnutie a:hover {
     color: rgb(219, 223, 0);
     transition: .2s;
 }
 
-.xx i {
+.povolenia_stiahnutie i {
     font-style: normal;
     color: rgb(219, 223, 0);
 }
@@ -638,27 +550,24 @@ aside span:first-child {
 
 /* SPAN */
 
-.xx span {
+.povolenia_stiahnutie span {
     border-top: 2px solid whitesmoke;
     padding-top: 1%;
 }
 
-.xx span:first-child {
+.povolenia_stiahnutie span:first-child {
     color: rgb(219, 223, 0);
     border-top: 2px solid rgb(219, 223, 0)
 }
 
 
 /*
- * MEDIA Q. - 980px
+ * MEDIA Q. - Povolenia & Stiahnutie - 980px
  */
 
 @media only screen and (max-width: 980px) {
-    .xx {
+    .povolenia_stiahnutie {
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
     }
     #povolenia {
         padding: 5% 3% 0;
@@ -669,7 +578,6 @@ aside span:first-child {
     }
     #stiahnutie h1 {
         margin-top: 8%;
-        text-align: center;
     }
 }
 
@@ -681,11 +589,8 @@ aside span:first-child {
 section {
     position: relative;
     width: 100%;
-    /* height: 60%; */
     background-color: rgb(219, 223, 0);
     display: flex;
-    /* padding-top: 5%; */
-    /* align-items: center; */
 }
 
 section i {
@@ -696,11 +601,8 @@ section i {
 
 .contact {
     width: 30%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     margin: 5% 0 0 2%;
 }
 
@@ -749,7 +651,7 @@ section span:first-child {
 
 
 /*
- * MEDIA Q. - 980px
+ * MEDIA Q. - SECTION - 980px
  */
 
 @media only screen and (max-width: 980px) {
@@ -761,7 +663,7 @@ section span:first-child {
     .contact {
         width: 80%;
         flex-direction: column;
-        margin: 0% 0 0 0%;
+        margin: 0;
     }
     .contact h5 {
         margin-bottom: 1%;
@@ -785,7 +687,6 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgb(199, 199, 0);
-    /* border-top: 1px solid rgb(35, 35, 35); */
 }
 
 footer i {
@@ -801,7 +702,7 @@ footer i {
     font-size: 80%;
     background-color: rgb(35, 35, 35);
     text-align: center;
-    padding: 1% 0 1% 0;
+    padding: 1% 0;
 }
 
 .autor a {
