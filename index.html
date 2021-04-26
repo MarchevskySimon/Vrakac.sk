@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vrakac</title>
 
     <!-- IMG in TITLE -->
@@ -34,8 +35,18 @@
 
     <!-- Otvaracie hodiny -->
     <div class="open_clock">
-        <p><i>Pracovná doba :</i> Pondelok-Piatok 07:00 - 15:30</p>
-        <p><i>Tel. číslo :</i> +421 901 921 609</p>
+        <span><i>Pondelok-Piatok</i> 07:00 - 15:30</span>
+        <span><i class="fas fa-phone-alt"></i> +421 901 921 609</span>
+
+        <span>
+            <a href="https://www.facebook.com/vrakoviskostaralubovna/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vrakac_sk/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </span>
     </div>
 
 
@@ -55,10 +66,11 @@
         </div>
 
         <ul>
-            <li><a href="#facebook_instagram">Sociálne siete</a></li>
+            <li><a href="#main">Zberné miesta</a></li>
             <li><a href="#vyradenie_vozidla">Vyradenie vozidla</a></li>
             <li><a href="#article">Odťahová služba</a></li>
-            <li><a href="#article_2">Autá na náhradné diely</a></li>
+            <li><a href="#article_2">Náhradné diely</a></li>
+            <li><a href="#article_3">Sociálne siete</a></li>
             <li><a href="#povolenia_stiahnutie">Povolenia</a></li>
             <li><a href="#povolenia_stiahnutie">Na stiahnutie</a></li>
             <li><a href="#section">Kontakty</a></li>
@@ -91,10 +103,11 @@
 
     <div class="nav_resp_ul">
         <ul>
-            <li><a href="#facebook_instagram">Sociálne siete</a></li>
+            <li><a href="#main">Zberné miesta</a></li>
             <li><a href="#vyradenie_vozidla">Vyradenie vozidla</a></li>
             <li><a href="#article">Odťahová služba</a></li>
-            <li><a href="#article_2">Autá na náhradné diely</a></li>
+            <li><a href="#article_2">Náhradné diely</a></li>
+            <li><a href="#article_3">Sociálne siete</a></li>
             <li><a href="#povolenia">Povolenia</a></li>
             <li><a href="#stiahnutie">Na stiahnutie</a></li>
             <li><a href="#section">Kontakty</a></li>
@@ -124,26 +137,60 @@
 
     <!-- MAIN -->
 
-    <main>
-        <div class="about_us">
-            <h1><span>O</span> <span>NÁS</span></h1>
-            <p>História firmy siaha do roku 1994, kedy sme začali svoju činnosť v oblasti výkupu, spracovania a triedenia druhotných surovín v regióne Stará Ľubovňa. Po dlhoročných skúsenostiach v danom odvetví sme rozšírili našu činnosť o ekologické spracovanie
-                starých vozidiel. V októbri 2013 nám bola udelená autorizácia na spracovanie starých vozidiel. Za týmto účelom sme zriadili novú prevádzku na Továrenskej ulici č.51 v Starej Ľubovni. Pri spracovaní starých vozidiel kladieme maximálny dôraz
-                na minimalizovanie vplyvov na životné prostredie, ktoré so sebou táto činnosť prináša.</p>
+    <main id="main">
+
+        <h1><span>ZBERNÉ</span> <span>MIESTA</span></h1>
+
+        <div class="z_m_links">
+            <ul>
+                <li id="sl">STARÁ ĽUBOVŇA</li>
+                <li id="bj">BARDEJOV</li>
+                <li id="pr">POPRAD</li>
+            </ul>
         </div>
 
-        <div class="facebook_instagram" id="facebook_instagram">
-            <h1><span>SOCIÁLNE</span> <span>SIETE</span></h1>
+        <div class="z_m_box">
+            <!-- SL -->
+            <div class="z_m" id="stara_lubovna">
 
-            <div class="facebook_instagram_links">
+                <h6>ZBERNÉ MIESTO STARÁ ĽUBOVŇA</h6>
+                <h5>VRAKAC.sk</h5>
 
-                <a href="https://www.facebook.com/vrakoviskostaralubovna/" target="_blank">
-                    <i class="fab fa-facebook-square fa-5x"></i>
-                </a>
+                <ul>
+                    <li><i>ADRESA: <br></i>Továrenská 1846/51 064 01<br>Stará Ľubovňa</li>
+                    <li><i class="fas fa-phone-alt"></i>+421 901 921 609</li>
+                </ul>
+            </div>
 
-                <a href="https://www.instagram.com/vrakac_sk/" target="_blank">
-                    <i class="fab fa-instagram-square fa-5x"></i>
-                </a>
+            <!-- BJ -->
+            <div class="z_m" id="bardejov">
+
+                <h6>ZBERNÉ MIESTO BARDEJOV</h6>
+                <h5>Irena Lamancová - DRUHOTNÉ SUROVINY</h5>
+
+                <ul>
+                    <li><i>ADRESA: <br></i>Kacvinského 3908/18 085 01<br>Bardejov</li>
+                    <li><i class="fas fa-phone-alt"></i>054/474 44 22</li>
+                </ul>
+            </div>
+
+            <!-- PR -->
+            <div class="z_m" id="poprad">
+
+                <h6>ZBERNÉ MIESTO POPRAD</h6>
+                <h5>POPRAD</h5>
+
+                <ul>
+                    <!-- <li><i>ADRESA: <br></i>?<br>Poprad</li> -->
+                    <li><i class="fas fa-phone-alt"></i>+421 901 921 609</li>
+                </ul>
+            </div>
+
+
+            <!-- GOOGLE MAP -->
+            <div class="google_map">
+                <iframe id="map_iframe" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDj4LrSDx-3UpQBSXlq8wKmRqr5hj2BxB4&center=49.30759412395534,20.6809701040204&zoom=15
+                &q=VRAKAC.sk"></iframe>
             </div>
         </div>
     </main>
@@ -153,7 +200,7 @@
     <div id="vyradenie_vozidla" class="vyradenie_vozidla">
         <h1><span>VYRADENIE</span> <span>VOZIDLA</span></h1>
 
-        <p>Službu odhlásenia vozidla z evidencie a následné vystavenie dokladov o odovzdaní vozidla autorizovanému spracovateľovi poskytujeme <i>bezplatne</i>.</p>
+        <p>Službu vyradenia vozidla z evidencie a následné vystavenie dokladov o odovzdaní vozidla autorizovanému spracovateľovi poskytujeme <i>bezplatne</i>.</p>
         <h5>K ODHLÁSENIU MOTOROVÉHO VOZIDLA JE POTREBNÉ :</h5>
 
         <div class="card_box">
@@ -224,11 +271,29 @@
     <!-- ARTICLE_2 -->
 
     <article id="article_2">
-        <h1><span>AUTÁ</span> <span>NA NÁHRADNÉ DIELY</span></h1>
+        <h1><span>NÁHRADNÉ</span> <span>DIELY</span></h1>
 
         <p>Ponúkame Vám široký sortiment použitých náhradných dielov, na rôzne značky automobilov.</p>
         <p>Ceny náhradných dielov sa určujú individuálne.</p>
         <p>Bližšie info na tel: <i>+421 901 921 609</i></p>
+    </article>
+
+    <!-- ARTICLE_3 -->
+
+    <article id="article_3">
+        <h1><span>SOCIÁLNE</span> <span>SIETE</span></h1>
+
+        <p>Budeme radi ak sa k nám pridáte na našich sociálnych sieťach.</p>
+
+        <p>
+            <a href="https://www.facebook.com/vrakoviskostaralubovna/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vrakac_sk/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </p>
     </article>
 
     <!-- Povolenia & Stiahnutie -->
@@ -285,11 +350,12 @@
                 <li>064 01 Stará Ľubovňa</li>
             </ul>
 
-            <h5><span>TELEFONICKÝ</span> <span>KONTAKT</span></h5>
+            <h5><span>KO</span><span>NTAKT</span></h5>
 
             <ul>
-                <li><i>VRAKOVISKO:<br></i>+421 901 921 609</li>
+                <li><i>VRAKAC.sk:<br></i>+421 901 921 609</li>
                 <li><i>ODŤAHOVÁ SLUŽBA:<br></i>052/432 63 65</li>
+                <li><i>E-MAIL:<br></i><a href="mailto:info@vrakac.sk">info@vrakac.sk</a></li>
             </ul>
         </div>
 
@@ -324,12 +390,14 @@
     </div>
 
 
+    <!-- JS SCRIPT -->
+    <script src="script.js"></script>
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f7902e935a.js" crossorigin="anonymous"></script>
 
 
-    <!-- JS SCRIPT -->
-    <script src="script.js"></script>
+
 </body>
 
 </html>

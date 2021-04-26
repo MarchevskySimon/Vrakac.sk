@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
 /* 
  * Základné nastavenia
  */
@@ -25,25 +33,48 @@ body {
 .open_clock {
     position: fixed;
     width: 100%;
-    min-height: 3%;
+    height: 35px;
     background-color: rgb(219, 223, 0);
     z-index: 12;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.open_clock p {
+.open_clock span {
     color: rgb(35, 35, 35);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 3%;
 }
 
 .open_clock i {
     font-style: normal;
     font-weight: 900;
     color: rgb(35, 35, 35);
+}
+
+.open_clock span:last-child {
+    -webkit-box-flex: 10;
+    -ms-flex-positive: 10;
+    flex-grow: 10;
+    text-align: right;
+}
+
+.open_clock .fab {
+    font-size: 180%;
+    margin: 0 5%;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.open_clock a:hover .fab {
+    opacity: .8;
 }
 
 
@@ -55,7 +86,7 @@ nav {
     position: fixed;
     width: 100%;
     min-height: 8vh;
-    top: 3%;
+    top: 35px;
     left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,7 +167,7 @@ nav ul a:hover {
 
 @media only screen and (max-width: 650px) {
     .open_clock {
-        font-size: 60%;
+        font-size: 70%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -148,7 +179,7 @@ nav ul a:hover {
  * MEDIA Q.- NAV - 980px
  */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1100px) {
     #nav {
         display: none;
     }
@@ -156,7 +187,7 @@ nav ul a:hover {
     #nav_resp {
         position: fixed;
         width: 100%;
-        top: 3%;
+        top: 35px;
         left: 0;
         z-index: 10;
         background-color: rgb(35, 35, 35);
@@ -197,10 +228,17 @@ nav ul a:hover {
     .nav_resp_ul ul {
         position: relative;
         height: 100%;
-        margin: 40% 0 0 5%;
+        margin: 35% 0 0 5%;
     }
     .nav_resp_ul li {
-        margin-bottom: 25%;
+        margin-bottom: 20%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .nav_resp_ul li {
+        font-size: 75%;
+        margin-bottom: 8%;
     }
 }
 
@@ -242,10 +280,20 @@ header svg {
 
 #text {
     position: relative;
+    padding: 0 2%;
 }
 
 #text h1 {
     font-size: 400%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 2%;
 }
 
@@ -277,8 +325,8 @@ header svg {
 main::before {
     position: absolute;
     content: '';
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 35, 35)), to(transparent));
     background: -o-linear-gradient(bottom, rgb(35, 35, 35), transparent);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(35, 35, 35)), to(transparent));
     background: linear-gradient(to top, rgb(35, 35, 35), transparent);
     width: 100%;
     min-height: 20%;
@@ -287,91 +335,123 @@ main::before {
 
 main {
     position: relative;
+    display: block;
     width: 100%;
     background-color: rgb(35, 35, 35);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding: 10% 0 0;
 }
 
-
-/* About us */
-
-.about_us {
-    width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+main h1 {
+    font-size: 200%;
     text-align: center;
-    padding: 10% 0 0;
 }
 
-.about_us h1 {
-    font-size: 200%;
-    margin-bottom: 2%;
+.z_m_links {
+    text-align: center;
+    margin: 5% 0;
 }
 
-.about_us p {
-    font-size: 110%;
-    line-height: 250%;
-}
-
-
-/* Facebook & Instagram */
-
-.facebook_instagram {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 10% 0 0;
-}
-
-.facebook_instagram h1 {
-    font-size: 200%;
-    margin-bottom: 5%;
-}
-
-.facebook_instagram_links {
-    width: 100%;
+.z_m_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 2% 0;
 }
 
-.facebook_instagram a {
-    margin: 0 3%;
+.z_m_links li {
+    display: inline;
+    border: 2px solid whitesmoke;
+    margin: 0 1%;
+    padding: 1%;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
 }
 
-.facebook_instagram i {
-    -webkit-transition: .1s;
-    -o-transition: .1s;
-    transition: .1s;
+.z_m_links li:hover {
+    background-color: rgb(219, 223, 0);
+    border-color: rgb(219, 223, 0);
+    color: rgb(35, 35, 35);
 }
 
-.facebook_instagram a:hover i {
-    color: rgb(219, 223, 0);
+.z_m {
+    width: 40%;
+    margin-right: 3%;
+    padding: 2%;
+    background-color: rgb(199, 199, 0);
+    -webkit-box-shadow: 8px 8px 4px rgba(15, 15, 15, 1);
+    box-shadow: 8px 8px 4px rgba(15, 15, 15, 1);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.z_m:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: rgb(219, 223, 0);
+    -webkit-box-shadow: 12px 12px 4px rgba(15, 15, 15, 1);
+    box-shadow: 12px 12px 4px rgba(15, 15, 15, 1);
+}
+
+.z_m h6 {
+    font-size: 80%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.z_m h5 {
+    font-size: 120%;
+    color: rgb(35, 35, 35);
+    margin: 3% 0;
+    text-align: center;
+}
+
+.z_m li {
+    margin: 2% 0;
+    color: rgb(35, 35, 35);
+    line-height: 200%;
+}
+
+.z_m i {
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(35, 35, 35)
+}
+
+
+/* CLASSI MIEST */
+
+#stara_lubovna {
+    display: block;
+}
+
+#bardejov {
+    display: none;
+}
+
+#poprad {
+    display: none;
+}
+
+
+/* GOOGLE MAP - MAIN*/
+
+main .google_map {
+    width: 40%;
+    margin-left: 3%;
+    background-color: whitesmoke;
+}
+
+main .google_map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 
@@ -396,14 +476,50 @@ main span:first-child {
     main {
         padding: 12% 0;
     }
-    /* About us */
-    .about_us {
-        text-align: left;
+    .z_m_box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
-    /* Facebook & Instagram */
-    .facebook_instagram {
-        width: 80%;
-        margin-top: 10%;
+    .z_m {
+        width: 96%;
+        margin: 0;
+        background-color: rgb(219, 223, 0);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .z_m:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .z_m_links li {
+        margin: 0 1%;
+        padding: 2%;
+    }
+    /* GOOGLE MAP - MAIN */
+    main .google_map {
+        width: 100%;
+        margin: 0;
+    }
+    main .google_map iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/*
+ * MEDIA Q.- MAIN - 400px
+ */
+
+@media only screen and (max-width: 400px) {
+    .z_m_links li {
+        display: block;
+        margin: 5%;
     }
 }
 
@@ -584,6 +700,22 @@ article i {
     color: rgb(219, 223, 0);
 }
 
+article a {
+    margin: 0 1%;
+}
+
+article a i {
+    font-size: 400%;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    /* color: whitesmoke; */
+}
+
+article a:hover i {
+    color: whitesmoke;
+}
+
 
 /* SPAN */
 
@@ -736,15 +868,30 @@ section i {
     margin-top: 5%;
 }
 
+.contact li a {
+    color: rgb(35, 35, 35);
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}
+
+.contact li a:hover {
+    color: whitesmoke;
+}
+
+.contact .fab {
+    font-size: 150%;
+}
+
 
 /* GOOGLE MAP */
 
-.google_map {
+section .google_map {
     width: 40%;
     background-color: whitesmoke;
 }
 
-.google_map iframe {
+section .google_map iframe {
     width: 100%;
     height: 100%;
     border: none;
@@ -792,7 +939,7 @@ section span:first-child {
         line-height: 170%;
     }
     /* GOOGLE MAP */
-    .google_map {
+    section .google_map {
         width: 100%;
         height: 300px;
     }
@@ -900,4 +1047,12 @@ footer i {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+a[href^="tel"] {
+    color: inherit;
+    /* Inherit text color of parent element. */
+    text-decoration: none;
+    /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
 }
