@@ -162,7 +162,7 @@ nav ul a:hover {
 
 
 /*
- * MEDIA Q. - NAV - 650px
+ * MEDIA Q. - Open clock - 650px
  */
 
 @media only screen and (max-width: 650px) {
@@ -171,6 +171,17 @@ nav ul a:hover {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+}
+
+
+/*
+ * MEDIA Q. - Open clock - 330px
+ */
+
+@media only screen and (max-width: 330px) {
+    .open_clock {
+        font-size: 50%;
     }
 }
 
@@ -231,7 +242,7 @@ nav ul a:hover {
         margin: 35% 0 0 5%;
     }
     .nav_resp_ul li {
-        margin-bottom: 20%;
+        margin-bottom: 15%;
     }
 }
 
